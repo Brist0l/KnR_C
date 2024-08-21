@@ -8,8 +8,8 @@ char line[MAXLEN];
 char longest[MAXLEN];
 int max;
 
-// The Use of 'extern' is not required in this code, if there were multiple files then i would be needing it
-// or if i had defined the variables below a function
+// The Use of 'extern' is not required in this code, if there were multiple files then I would be needing it
+// or if I had defined the variables below a function
 
 int main(){
 	int len;

@@ -1,19 +1,25 @@
 #include<stdio.h>
 
+#define NUM_WORDS 10
+
 int main(){
-	int c,i,x;
-	int len[10];
+	int i,x,wc=0;
+	int len[NUM_WORDS];
 
-	for(i=0;i<10;++i)
+	for(i=0;i<NUM_WORDS;++i)
 		len[i] = 0;
+	
+	for(i = 0; i< NUM_WORDS;i++){
+		while(getchar() != '\n')
+			wc++;
+		len[i] = wc;
+	}	
 
-	while((c=getchar()) != '\n')
-		++len[c - '0'];
-
-	for(i=0;i<10;++i){
-		if(len[i] != 0)
-			for(x=0;x<len[i];x++)
-				printf("-");
-	}
+	for(i=0;i<NUM_WORDS;++i){
+		for(x=0;x<len[i];x++)
+			printf("-");
+		putchar('\n');
+	}	
+	
 
 }

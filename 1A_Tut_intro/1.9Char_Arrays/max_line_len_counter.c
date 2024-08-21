@@ -11,7 +11,7 @@ int main(){
 	max = 0;
 
 	printf("The value of s now is:%s\nThe lenght of it is:%d\n",s,lenght);
-	while((lenght = getLine(s,MAXLEN)) > 5){
+	while((lenght = getLine(s,MAXLEN)) > 0){
 		if(lenght>max){
 			max = lenght;
 			copy(s,maxline);
@@ -36,7 +36,8 @@ int getLine(char line[],int len){
 		++i;
 	}
 	printf("The line is:%s\nand the last char stored in c is:%d\nWith i's value as:%d\n",line,c,i);
-	line[i]='\0';
+	if(i>0)
+		line[i]='\0';
 	return i;
 }
 

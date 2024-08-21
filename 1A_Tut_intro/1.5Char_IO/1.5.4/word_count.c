@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+//worth revising
+
 #define IN 1 // Inside the word
 #define OUT 0 // Outside the word
 
