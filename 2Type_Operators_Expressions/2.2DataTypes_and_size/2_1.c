@@ -10,10 +10,12 @@ int main(){
 	printf("The max val of short is:%d\n",SHRT_MAX);
 	printf("The min val of short is:%d\n",SHRT_MIN);
 	printf("The unsigned val of short is:%d\n",USHRT_MAX);
+	printf("The max val of long is:%ld\n",LONG_MAX);
+	printf("The max val of unsigned long is:%lu\n",ULONG_MAX);
 
 }
 
-// Short -> 16 bit number
+// Short -> 16 bit number (2 byte num)
 // Int -> 16 bit or 32 bit number depending on processor and compiler
 // Long -> 32 bit number
 // unsigned vals are 0 or positive , so if we already know that the var would be postive then we can use this

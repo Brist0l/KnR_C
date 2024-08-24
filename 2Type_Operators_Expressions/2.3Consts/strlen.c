@@ -6,14 +6,9 @@ int getLine(char str[MAXLEN]);
 
 int main(){
 	char str[MAXLEN] = "";
-	int len;
 	
-	while(getLine(str) > 0){
-		printf("The str is:%s\n",str);
-		len = strLen(str);
-		printf("Len is:%d\n",len);
-	}
-		return 0;
+	while(getLine(str) > 0)
+		printf("The str is:%s\nLen is:%d\n",str,strLen(str));
 }
 
 int strLen(char str[MAXLEN]){
@@ -22,7 +17,7 @@ int strLen(char str[MAXLEN]){
 	i = 0;
 
 	while(str[i] != '\0')
-		++i;
+		i++;
 
 	return i;
 }
@@ -32,6 +27,8 @@ int getLine(char str[MAXLEN]){
 	
 	for(i=0;i < MAXLEN && (c = getchar()) != EOF && c != '\n';++i)
 		str[i] = c;
+	str[i] = '\0';
+
 	return i;
 }
 
