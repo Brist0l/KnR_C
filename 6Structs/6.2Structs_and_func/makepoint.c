@@ -25,8 +25,8 @@ int main(){
 	typedef struct point point;	
 
 	point temp;
-	struct point sum;
-	struct point *pp; // if a large sturct needs to be passed to a function then it is more 
+	point sum;
+	point *pp; // if a large sturct needs to be passed to a function then it is more 
 			  // efficient to pass a pointer.
 
 	temp = makepoint(1,2);
